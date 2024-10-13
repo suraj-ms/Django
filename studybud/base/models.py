@@ -17,6 +17,11 @@ class Room(models.Model):
     updated = models.DateTimeField(auto_now=True) #auto_now update date all the time when updated
     created = models.DateTimeField(auto_now_add=True)#auto_now_add update the date at 1st time when created
     
+    #list the value in decending order with [-] symbol in screen
+    class Meta:
+        ordering  = ['-updated', '-created']
+    
+
     def __str__(self):
         return str(self.name)
 
