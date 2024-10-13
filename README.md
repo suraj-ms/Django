@@ -95,3 +95,38 @@ When you're done working on your project, you can deactivate the virtual environ
 ```bash
 deactivate
 ```
+
+
+## Django db
+
+Pyhton has built it data table access that table we need to migrate the django
+
+```bash
+python manage.py migrate
+```
+
+Now you can create your model in model class and after adding all data model now migrate the database
+
+```bash
+python manage.py makemigrations
+```
+now re migrate with <b> python manage.py migrate</b> command 
+
+## Django administator 
+
+now to create a user in django admin run following command add fill the data
+
+```bash
+python manage.py createsuperuser
+```
+
+To access the admin panel use <b>/admin</b> url in browser
+
+Now add you model in admin.py then you can see your model in adminstation panel
+
+Then access the database like
+<pre>
+room = Room.objects.get(id = pk)
+                   .all()
+                   .filter
+</pre>
